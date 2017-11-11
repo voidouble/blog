@@ -1,0 +1,26 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "voidouble的博客",
+  "main": "src/main.ts",
+  "scripts": {
+    "test": "node dist/js/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voidouble/blog.git"
+  },
+  "keywords": [
+    "web",
+    "javascript",
+    "typescript",
+    "html",
+    "css"
+  ],
+  "author": "voidouble",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/voidouble/blog/issues"
+  },
+  "homepage": "https://github.com/voidouble/blog#readme"
+}
