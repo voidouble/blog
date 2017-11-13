@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>测试浏览器是否支持WEBGL</title>
+</head>
+
+<body>
+    <script>
+        (function () {
+            var canvas = document.createElement("canvas");
+            if (!canvas) {
+                alert("canvas can't create!");
+                return;
+            }
+            if (!canvas.getContext) {
+                alert("canvas no method getContext");
+                return;
+            }
+            var gl = canvas.getContext("experimental-webgl");
+            if (!gl) {
+                alert("experimental-webgl context is NOT exists.");
+            }
+            var gl = canvas.getContext("webgl");
+            if (!gl) {
+                alert("webgl context is NOT exists.");
+                return;
+            }
+            alert("Congratuations! You browser webgl is valid.")
+        })();
+    </script>
+</body>
+
+</html>

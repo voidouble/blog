@@ -6,18 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>网页的屏幕尺寸</title>
     <style type="text/css">
+        article * {
+            float: left;
+            clear: both;
+        }
         .rightfloat {
             float: right; 
+            clear: both;
+        }
+        .code {
+            border-color: black;
+            border-width: thick;
+            background-color: bisque;
         }
     </style>
 </head>
 <body>
     <article>
     <h5>网页检测屏幕尺寸</h5>
-    <time class="rightfloat">2017-11-11</time>
+    <time class="rightfloat">2017-11-11</time><br>
     <p>head标签下插入</p>
-    <xmp>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.5,minimum-scale=0.7">
+    <xmp class="code">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.5,minimum-scale=0.7">
     </xmp>
     </article>
 </body>
